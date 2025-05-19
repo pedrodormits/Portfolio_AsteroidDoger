@@ -180,12 +180,14 @@ class Player extends PositionComponent with CollisionCallbacks, KeyboardHandler,
   double moveSpeed = 250;
   double gameWidth;
   int hp = 2;
+  late Sprite spaceshipSprite;
   
   Player({required this.gameWidth});
 
   @override
   Future<void> onLoad() async
   {
+    spaceshipSprite = await game.loadSprite('spaceship.png');
     size = Vector2(50, 50);
     position = Vector2(900, 900);
     add(RectangleHitbox());
@@ -195,7 +197,7 @@ class Player extends PositionComponent with CollisionCallbacks, KeyboardHandler,
   void render(Canvas canvas)
   {
     super.render(canvas);
-    canvas.drawRect(size.toRect(), Paint()..color = Colors.blue);
+    spaceshipSprite.render(canvas, size: size);
   }
 
   @override
@@ -246,10 +248,12 @@ class Asteroid extends PositionComponent with CollisionCallbacks, HasGameReferen
   Random random = Random();
   double gameWidth;
   Asteroid({required this.gameWidth});
+  late Sprite asteroidSprite;
 
   @override
   Future<void> onLoad() async
   {
+    asteroidSprite = await game.loadSprite('asteroid.png');
     size = Vector2(50, 50);
     add(RectangleHitbox());
   }
@@ -272,7 +276,7 @@ class Asteroid extends PositionComponent with CollisionCallbacks, HasGameReferen
   void render(Canvas canvas)
   {
     super.render(canvas);
-    canvas.drawRect(size.toRect(), Paint()..color = Colors.red);
+    asteroidSprite.render(canvas, size: size);
   }
 
   @override
