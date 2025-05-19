@@ -5,7 +5,7 @@ This project is my first experience with the Flame engine, Flutter, and Dart.
 ## Game Rules
 
 - You mustdodge all falling asteroids for 30 seconds;
-- You have 2 health points. If you lose them all, it's game over;
+- You have 2 health points. If you lose them all, it's game over.
 
 ## Controls
 
@@ -51,14 +51,14 @@ Note: Ensure the requirements are visually represented in the game. For example,
 - The game has background music and some audio effects (https://docs.flame-engine.org/1.6.0/bridge_packages/flame_audio/audio.html#audio);
 - The game uses some Flame particle effects (https://docs.flame-engine.org/1.6.0/flame/rendering/particles.html#particles);
 - The game has at least one spritesheet animation (https://pub.dev/packages/flame_texturepacker);
-- The game has at least one decorator to change the appearance of a sprite (https://docs.flame-engine.org/1.6.0/flame/rendering/decorators.html#decorators);
+- The game has at least one decorator to change the appearance of a sprite (https://docs.flame-engine.org/1.6.0/flame/rendering/decorators.html#decorators).
 
 ## Tech Stack
 
-- [Flutter](https://flutter.dev/)
-- [Flame Engine](https://flame-engine.org/)
-- [BLoC](https://pub.dev/packages/flutter_bloc)
-- [GitHub Pages](https://pages.github.com/)
+- [Flutter](https://flutter.dev/);
+- [Flame Engine](https://flame-engine.org/);
+- [BLoC](https://pub.dev/packages/flutter_bloc);
+- [GitHub Pages](https://pages.github.com/).
 
 ## Future Plans
 
@@ -68,6 +68,6 @@ Note: Ensure the requirements are visually represented in the game. For example,
 
 ## Development Info
 
-- Developed on macOS using Flutter and Flame.
-- Designed for keyboard input (desktop web).
+- Developed on macOS using Flutter and Flame;
+- Designed for keyboard input (desktop web);
 - First-time using Flame, Flutter and Dart.
